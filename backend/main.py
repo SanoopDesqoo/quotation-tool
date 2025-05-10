@@ -20,7 +20,7 @@ def create_quote(req: QuoteRequest):
     # 1. Ask ChatGPT to parse items
     prompt = f"""
 You are a parser. Input: {req.user_input}
-Output JSON: [{"{"}"name":string,"quantity":int,"discount":float},{"}"}].
+Output JSON: [{{"name": "string", "quantity": int, "discount": float}}, ...]
 """
     resp = openai.ChatCompletion.create(
       model="gpt-4",
