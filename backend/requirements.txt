@@ -1,7 +1,8 @@
 fastapi
 uvicorn
-pandas
 openpyxl
+pandas
 python-multipart
 openai
-
+jinja2
+weasyprint
